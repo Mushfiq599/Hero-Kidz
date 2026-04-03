@@ -1,6 +1,6 @@
 "use server"
 
-import { dbConnect,collections } from "@/lib/dbConnect"
+import { dbConnect, collections } from "@/lib/dbConnect"
 import { ObjectId } from "mongodb"
 
 

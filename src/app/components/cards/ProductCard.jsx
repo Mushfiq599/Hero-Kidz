@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 import { FaStar, FaCartPlus, FaHeart } from 'react-icons/fa';
 
@@ -85,6 +86,11 @@ const ProductCard = ({ product }) => {
                         <FaCartPlus className="text-lg" />
                         Add to Cart
                     </button>
+                    <Link href={`/products/${_id}`}
+                        className="btn btn-primary btn-outline w-full gap-2 hover:gap-3 transition-all"
+                    >
+                        View Details
+                    </Link>
                 </div>
             </div>
         </div>
